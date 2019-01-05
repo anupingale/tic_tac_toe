@@ -25,7 +25,8 @@ body {
 }
 
 .all_cells {
-  margin: auto;
+  width:1500px;
+  margin-left: 80px;
   display: none
 }
 
