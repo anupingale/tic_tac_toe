@@ -1,0 +1,36 @@
+h1 {
+  margin: auto;
+  text-align: center
+}
+
+body {
+  margin: auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px
+}
+
+.player_names {
+  padding: 25px;
+  margin-left:20%
+}
+
+.input_style {
+  height:25px;
+  width:250px
+}
+
+.submit {
+  height:25px;
+  width:100px
+}
+
+.all_cells {
+  margin: auto;
+  display: none
+}
+
+.cell {
+  height:90px;
+  width:90px;
+  border: solid black 3px
+}

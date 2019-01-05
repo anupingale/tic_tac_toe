@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<title>tic-tac-toe</title>
+		<script src="main.js"></script>
+		<link rel="stylesheet" href="stylesheet.css" />
+	</head>
+	<body>
+		<h1>TIC-TAC-TOE</h1>
+		<div class="player_names">
+			Enter Player 1 :
+			<input type="text" class="input_style" id="player1" /> Enter Player 2 :
+			<input type="text" class="input_style" id="player2" />
+			<button id="submit" class="submit" onclick=" getUserInfo();getBoard()">
+				StartGame
+			</button>
+		</div>
+		<h3 id="whoseMove"></h3>
+		<div>
+			<table id="board" onclick="getMove(event)" class="all_cells">
+				<tr>
+					<td id="0" class="cell"></td>
+					<td id="1" class="cell"></td>
+					<td id="2" class="cell"></td>
+				</tr>
+				<tr>
+					<td id="3" class="cell"></td>
+					<td id="4" class="cell"></td>
+					<td id="5" class="cell"></td>
+				</tr>
+				<tr>
+					<td id="6" class="cell"></td>
+					<td id="7" class="cell"></td>
+					<td id="8" class="cell"></td>
+				</tr>
+			</table>
+
+			<h2 id="winner"></h2>
+		</div>
+	</body>
+</html>
