@@ -31,9 +31,9 @@ const getBoard = function() {
 	whoseMove(player1);
 };
 
-const isSubset = function(userMoves, winningMove) {
+const isSubset = function(playerMoves, winningMove) {
 	isPresent = function(x) {
-		return userMoves.includes(x);
+		return playerMoves.includes(x);
 	};
 	let checkSubset = winningMove.every(isPresent);
 	return checkSubset;
@@ -79,6 +79,7 @@ const getMove = function(event) {
 		player1Winner = checkWinner(player1moves);
 		if (player1Winner) {
 			announceWinner(player1);
+			return;
 		}
 		whoseMove(player2);
 		currentPlayer = player2;
@@ -89,6 +90,7 @@ const getMove = function(event) {
 		player2Winner = checkWinner(player2moves);
 		if (player2Winner) {
 			announceWinner(player2);
+			return;
 		}
 		whoseMove(player1);
 		currentPlayer = player1;
